@@ -1,0 +1,257 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+  color: #333;
+}
+
+/* TOP BAR */
+.top-bar {
+  background: #A3BFFF;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo-container img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.top-bar h2 {
+  flex-grow: 1;
+  font-size: 22px;
+}
+
+.logout-btn {
+  background: #f1f1f1;
+  color: #e74c3c;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #f1c40f;
+  color: #000;
+}
+
+/* FILTER FORM */
+.filter-section {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-form label {
+  font-weight: 600;
+}
+
+.filter-form select,
+.filter-form input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.btn-cari,
+.btn-reset,
+.btn-tambah,
+.btn-export {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-export-page {
+  background-color: #4A90E2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px auto;
+  display: block;
+}
+
+.btn-export-page:hover {
+  background-color: #357ABD;
+}
+
+
+.btn-cari {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-reset {
+  background: #ccc;
+  color: #333;
+}
+
+.btn-tambah,
+.btn-export {
+  background: #2ecc71;
+  color: white;
+  align-self: flex-start;
+}
+
+.btn-cari:hover {
+  background: #c0392b;
+}
+
+.btn-reset:hover {
+  background: #999;
+}
+
+.btn-tambah:hover,
+.btn-export:hover {
+  background: #27ae60;
+}
+
+/* TABEL */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: #A3BFFF;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+td a {
+  color: #e74c3c;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .filter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .EDANT {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn-tambah {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.03s ease;
+  }
+
+  .btn-tambah:hover {
+    background-color: #0056b3;
+  }
+
+  .btn-export {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.03s ease;
+  }
+
+  .btn-export:hover {
+    background-color: #1e7e34;
+  }
+
+  table, thead, tbody, th, td, tr {
+    font-size: 14px;
+  }
+}
+
+/* Pagination */
+.pagination-box {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pagination {
+    text-decoration: none;
+    color: #f1f1f1; /* Primary color */
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination:hover {
+    background-color: #007bff;
+    color: #e74c3c; /* Text color on hover */
+}
+
+.pagination.active {
+    background-color: #f1f1f1; /* Active page background */
+    color: #e74c3c; /* Active text color */
+    border: 1px solid #0056b3; /* Darker border for active page */
+}
+
+.pagination:disabled {
+    color: #ccc; /* Disabled link color */
+    border: 1px solid #ccc; /* Disabled border */
+    cursor: not-allowed; /* Cursor style for disabled */
+}

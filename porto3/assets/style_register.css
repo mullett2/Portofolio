@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #799EFF, #EBD6FB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.register-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}   
+.register-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width: 350px;
+}
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+.register-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+.register-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.register-box select {
+    width: 106%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5C84FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #5C84FF;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 10px;
+    color: red;
+}
+.message.success {
+    color: green;
+}

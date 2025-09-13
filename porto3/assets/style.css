@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    
+}
+
+.logout-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 14px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.filter-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-form select,
+.filter-form input[type="text"] {
+    padding: 6px;
+    font-size: 14px;
+}
+
+.btn-cari {
+    background-color: #2980b9;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color: darkred;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-tambah {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #eee;
+}
+
+.logo-container img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-container img {
+    height: 40px;         /* Ukuran tinggi logo */
+    width: auto;          /* Biar proporsional */
+    object-fit: contain;  /* Biar nggak gepeng */
+}
+
+.logo-container span {
+    font-weight: bold;
+    font-size: 10px;
+    color: #333;
+}

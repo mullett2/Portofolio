@@ -1,0 +1,83 @@
+/* Reset bawaan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #799EFF, #EBD6FB);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container login */
+.login-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo */
+.login-box img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+/* Judul */
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input fields */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #e74c3c;
+  outline: none;
+}
+
+/* Tombol Login */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5C84FF;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #5C84FF;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-box img {
+    width: 80px;
+  }
+}
